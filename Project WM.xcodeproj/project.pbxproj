@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEB7691D2BEC7A20000C6E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7691C2BEC7A20000C6E66 /* LoginViewController.swift */; };
 		CEC817C72BEA9F1A0061BF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC817C62BEA9F1A0061BF06 /* AppDelegate.swift */; };
 		CEC817C92BEA9F1A0061BF06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC817C82BEA9F1A0061BF06 /* SceneDelegate.swift */; };
 		CEC817CB2BEA9F1A0061BF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC817CA2BEA9F1A0061BF06 /* ViewController.swift */; };
@@ -22,7 +23,7 @@
 		CEC8180E2BEA9FF30061BF06 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC818052BEA9FF20061BF06 /* FMResultSet.m */; };
 		CEC8180F2BEA9FF30061BF06 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC818072BEA9FF20061BF06 /* FMDatabase.m */; };
 		CEC818102BEA9FF30061BF06 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8180B2BEA9FF30061BF06 /* FMDatabasePool.m */; };
-		CEC818122BEAA09C0061BF06 /* WorkManagementDaTabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC818112BEAA09C0061BF06 /* WorkManagementDaTabase.swift */; };
+		CEC818122BEAA09C0061BF06 /* DatabaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC818112BEAA09C0061BF06 /* DatabaseLayer.swift */; };
 		CEC818152BEAA1C60061BF06 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC818142BEAA1C60061BF06 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEB7691C2BEC7A20000C6E66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEC817C32BEA9F1A0061BF06 /* Project WM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project WM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC817C62BEA9F1A0061BF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC817C82BEA9F1A0061BF06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +72,7 @@
 		CEC818092BEA9FF30061BF06 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		CEC8180A2BEA9FF30061BF06 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		CEC8180B2BEA9FF30061BF06 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		CEC818112BEAA09C0061BF06 /* WorkManagementDaTabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkManagementDaTabase.swift; sourceTree = "<group>"; };
+		CEC818112BEAA09C0061BF06 /* DatabaseLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseLayer.swift; sourceTree = "<group>"; };
 		CEC818142BEAA1C60061BF06 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEAA62D12BEB75E000D02124 /* File icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "File icon";
+			sourceTree = "<group>";
+		};
 		CEC817BA2BEA9F1A0061BF06 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +133,7 @@
 		CEC817C52BEA9F1A0061BF06 /* Project WM */ = {
 			isa = PBXGroup;
 			children = (
+				CEAA62D12BEB75E000D02124 /* File icon */,
 				CEC817FF2BEA9FAB0061BF06 /* Controls */,
 				CEC817FE2BEA9FA20061BF06 /* Models */,
 				CEC817FD2BEA9F920061BF06 /* FMDB */,
@@ -176,7 +186,7 @@
 		CEC817FC2BEA9F880061BF06 /* DAL */ = {
 			isa = PBXGroup;
 			children = (
-				CEC818112BEAA09C0061BF06 /* WorkManagementDaTabase.swift */,
+				CEC818112BEAA09C0061BF06 /* DatabaseLayer.swift */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -210,6 +220,7 @@
 		CEC817FF2BEA9FAB0061BF06 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				CEB7691C2BEC7A20000C6E66 /* LoginViewController.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -362,8 +373,9 @@
 				CEC817C92BEA9F1A0061BF06 /* SceneDelegate.swift in Sources */,
 				CEC8180C2BEA9FF30061BF06 /* FMDatabaseAdditions.m in Sources */,
 				CEC8180D2BEA9FF30061BF06 /* FMDatabaseQueue.m in Sources */,
-				CEC818122BEAA09C0061BF06 /* WorkManagementDaTabase.swift in Sources */,
+				CEC818122BEAA09C0061BF06 /* DatabaseLayer.swift in Sources */,
 				CEC8180F2BEA9FF30061BF06 /* FMDatabase.m in Sources */,
+				CEB7691D2BEC7A20000C6E66 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

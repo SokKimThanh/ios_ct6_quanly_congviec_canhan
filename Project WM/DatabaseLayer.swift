@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 import os.log
 
-class WorkManagementDaTabase {
+class DatabaseLayer {
     
 }
