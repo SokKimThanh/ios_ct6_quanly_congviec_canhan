@@ -1,0 +1,6 @@
+framework module Pods_Project_WM_Project_WMUITests {
+  umbrella header "Pods-Project WM-Project WMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

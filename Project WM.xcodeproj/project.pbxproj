@@ -7,7 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22EB5D8B29BF508C984EC8AC /* Pods_Project_WMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D660A6F272301A4F94F9E41F /* Pods_Project_WMTests.framework */; };
+		6BF3DB1FDE71BD1FA2BD0C76 /* Pods_Project_WM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E3029EFDCF5DD91CF4D98F /* Pods_Project_WM.framework */; };
+		9325E79834DF846A233D2F4C /* Pods_Project_WM_Project_WMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EE2BEB64460DA560D2D032 /* Pods_Project_WM_Project_WMUITests.framework */; };
+		CE7132682BEF166A00834D23 /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7132672BEF166A00834D23 /* SQLiteCommands.swift */; };
+		CE71326B2BEF1FAB00834D23 /* NewTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71326A2BEF1FAA00834D23 /* NewTaskViewModel.swift */; };
+		CE71326E2BEF234C00834D23 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71326D2BEF234C00834D23 /* UIViewController.swift */; };
+		CE7132E12BEFE02700834D23 /* TaskScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7132E02BEFE02700834D23 /* TaskScreenViewModel.swift */; };
+		CE7132E52BEFE64F00834D23 /* ListTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7132E42BEFE64F00834D23 /* ListTaskTableViewController.swift */; };
 		CEB7691D2BEC7A20000C6E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7691C2BEC7A20000C6E66 /* LoginViewController.swift */; };
+		CEB7691F2BECC6E2000C6E66 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7691E2BECC6E2000C6E66 /* SignUpViewController.swift */; };
+		CEB769232BED1801000C6E66 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB769222BED1801000C6E66 /* homeViewController.swift */; };
+		CEB769252BED43AE000C6E66 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB769242BED43AE000C6E66 /* TaskCell.swift */; };
+		CEB769662BEE584F000C6E66 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB769652BEE584F000C6E66 /* SQLiteDatabase.swift */; };
+		CEB7696A2BEE7282000C6E66 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB769692BEE7282000C6E66 /* TaskModel.swift */; };
+		CEB7696C2BEE9B38000C6E66 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7696B2BEE9B38000C6E66 /* AddTaskViewController.swift */; };
+		CEB769712BEEA1AB000C6E66 /* TaskCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB769702BEEA1AB000C6E66 /* TaskCellTableViewCell.swift */; };
+		CEB769722BEF0E56000C6E66 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC818142BEAA1C60061BF06 /* libsqlite3.0.tbd */; };
+		CEB769732BEF0E56000C6E66 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB769672BEE584F000C6E66 /* libsqlite3.tbd */; };
 		CEC817C72BEA9F1A0061BF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC817C62BEA9F1A0061BF06 /* AppDelegate.swift */; };
 		CEC817C92BEA9F1A0061BF06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC817C82BEA9F1A0061BF06 /* SceneDelegate.swift */; };
 		CEC817CB2BEA9F1A0061BF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC817CA2BEA9F1A0061BF06 /* ViewController.swift */; };
@@ -24,7 +41,6 @@
 		CEC8180F2BEA9FF30061BF06 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC818072BEA9FF20061BF06 /* FMDatabase.m */; };
 		CEC818102BEA9FF30061BF06 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8180B2BEA9FF30061BF06 /* FMDatabasePool.m */; };
 		CEC818122BEAA09C0061BF06 /* DatabaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC818112BEAA09C0061BF06 /* DatabaseLayer.swift */; };
-		CEC818152BEAA1C60061BF06 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC818142BEAA1C60061BF06 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +61,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123F07F77E18CA06C9420D57 /* Pods-Project WM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WM.debug.xcconfig"; path = "Target Support Files/Pods-Project WM/Pods-Project WM.debug.xcconfig"; sourceTree = "<group>"; };
+		32EE2BEB64460DA560D2D032 /* Pods_Project_WM_Project_WMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_WM_Project_WMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E3029EFDCF5DD91CF4D98F /* Pods_Project_WM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_WM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2E84B8A264626A5B0BF7AD /* Pods-Project WMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WMTests.debug.xcconfig"; path = "Target Support Files/Pods-Project WMTests/Pods-Project WMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		507E3849B446678C6EB81E4F /* Pods-Project WM-Project WMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WM-Project WMUITests.debug.xcconfig"; path = "Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9352166DCE1F9870694E5FC /* Pods-Project WM-Project WMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WM-Project WMUITests.release.xcconfig"; path = "Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8989BAB51953AC8AC6BE694 /* Pods-Project WMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WMTests.release.xcconfig"; path = "Target Support Files/Pods-Project WMTests/Pods-Project WMTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE7132672BEF166A00834D23 /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
+		CE71326A2BEF1FAA00834D23 /* NewTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewModel.swift; sourceTree = "<group>"; };
+		CE71326D2BEF234C00834D23 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CE7132E02BEFE02700834D23 /* TaskScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScreenViewModel.swift; sourceTree = "<group>"; };
+		CE7132E42BEFE64F00834D23 /* ListTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTaskTableViewController.swift; sourceTree = "<group>"; };
 		CEB7691C2BEC7A20000C6E66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEB7691E2BECC6E2000C6E66 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CEB769222BED1801000C6E66 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		CEB769242BED43AE000C6E66 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		CEB769652BEE584F000C6E66 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		CEB769672BEE584F000C6E66 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CEB769692BEE7282000C6E66 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		CEB7696B2BEE9B38000C6E66 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		CEB769702BEEA1AB000C6E66 /* TaskCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTableViewCell.swift; sourceTree = "<group>"; };
 		CEC817C32BEA9F1A0061BF06 /* Project WM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project WM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC817C62BEA9F1A0061BF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC817C82BEA9F1A0061BF06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +90,7 @@
 		CEC817D02BEA9F1A0061BF06 /* Project_WM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_WM.xcdatamodel; sourceTree = "<group>"; };
 		CEC817D22BEA9F1F0061BF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC817D52BEA9F1F0061BF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEC817D72BEA9F1F0061BF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC817D72BEA9F1F0061BF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Project WM/Info.plist"; sourceTree = SOURCE_ROOT; };
 		CEC817DC2BEA9F200061BF06 /* Project WMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project WMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC817E02BEA9F200061BF06 /* Project_WMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_WMTests.swift; sourceTree = "<group>"; };
 		CEC817E62BEA9F200061BF06 /* Project WMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project WMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +110,8 @@
 		CEC8180B2BEA9FF30061BF06 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		CEC818112BEAA09C0061BF06 /* DatabaseLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseLayer.swift; sourceTree = "<group>"; };
 		CEC818142BEAA1C60061BF06 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D660A6F272301A4F94F9E41F /* Pods_Project_WMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_WMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8762C437CC385DAE98B6CA /* Pods-Project WM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WM.release.xcconfig"; path = "Target Support Files/Pods-Project WM/Pods-Project WM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC818152BEAA1C60061BF06 /* libsqlite3.0.tbd in Frameworks */,
+				CEB769722BEF0E56000C6E66 /* libsqlite3.0.tbd in Frameworks */,
+				CEB769732BEF0E56000C6E66 /* libsqlite3.tbd in Frameworks */,
+				6BF3DB1FDE71BD1FA2BD0C76 /* Pods_Project_WM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EB5D8B29BF508C984EC8AC /* Pods_Project_WMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,17 +137,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9325E79834DF846A233D2F4C /* Pods_Project_WM_Project_WMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CBAC5EE1F03C9B697AA97BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				123F07F77E18CA06C9420D57 /* Pods-Project WM.debug.xcconfig */,
+				EA8762C437CC385DAE98B6CA /* Pods-Project WM.release.xcconfig */,
+				507E3849B446678C6EB81E4F /* Pods-Project WM-Project WMUITests.debug.xcconfig */,
+				A9352166DCE1F9870694E5FC /* Pods-Project WM-Project WMUITests.release.xcconfig */,
+				4A2E84B8A264626A5B0BF7AD /* Pods-Project WMTests.debug.xcconfig */,
+				C8989BAB51953AC8AC6BE694 /* Pods-Project WMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE7132692BEF1F7800834D23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE71326A2BEF1FAA00834D23 /* NewTaskViewModel.swift */,
+				CE7132E02BEFE02700834D23 /* TaskScreenViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE71326C2BEF230700834D23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE71326D2BEF234C00834D23 /* UIViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		CEAA62D12BEB75E000D02124 /* File icon */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "File icon";
+			sourceTree = "<group>";
+		};
+		CEB7696F2BEEA15B000C6E66 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEB769702BEEA1AB000C6E66 /* TaskCellTableViewCell.swift */,
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 		CEC817BA2BEA9F1A0061BF06 = {
@@ -117,6 +197,7 @@
 				CEC817E92BEA9F200061BF06 /* Project WMUITests */,
 				CEC817C42BEA9F1A0061BF06 /* Products */,
 				CEC818132BEAA1C60061BF06 /* Frameworks */,
+				8CBAC5EE1F03C9B697AA97BF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,12 +214,15 @@
 		CEC817C52BEA9F1A0061BF06 /* Project WM */ = {
 			isa = PBXGroup;
 			children = (
+				CE71326C2BEF230700834D23 /* Extensions */,
+				CE7132692BEF1F7800834D23 /* ViewModel */,
+				CEB7696F2BEEA15B000C6E66 /* TableViewCell */,
 				CEAA62D12BEB75E000D02124 /* File icon */,
 				CEC817FF2BEA9FAB0061BF06 /* Controls */,
 				CEC817FE2BEA9FA20061BF06 /* Models */,
 				CEC817FD2BEA9F920061BF06 /* FMDB */,
 				CEC817FC2BEA9F880061BF06 /* DAL */,
-				CEC817FB2BEA9F6D0061BF06 /* Controllers */,
+				CEC817FB2BEA9F6D0061BF06 /* Controller */,
 				CEC817CC2BEA9F1A0061BF06 /* Main.storyboard */,
 				CEC817F92BEA9F360061BF06 /* System files */,
 				CEC817CF2BEA9F1A0061BF06 /* Project_WM.xcdatamodeld */,
@@ -175,18 +259,22 @@
 			name = "System files";
 			sourceTree = "<group>";
 		};
-		CEC817FB2BEA9F6D0061BF06 /* Controllers */ = {
+		CEC817FB2BEA9F6D0061BF06 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				CEC817CA2BEA9F1A0061BF06 /* ViewController.swift */,
+				CE7132E42BEFE64F00834D23 /* ListTaskTableViewController.swift */,
+				CEB7696B2BEE9B38000C6E66 /* AddTaskViewController.swift */,
 			);
-			name = Controllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		CEC817FC2BEA9F880061BF06 /* DAL */ = {
 			isa = PBXGroup;
 			children = (
 				CEC818112BEAA09C0061BF06 /* DatabaseLayer.swift */,
+				CEB769652BEE584F000C6E66 /* SQLiteDatabase.swift */,
+				CE7132672BEF166A00834D23 /* SQLiteCommands.swift */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -213,6 +301,7 @@
 		CEC817FE2BEA9FA20061BF06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEB769692BEE7282000C6E66 /* TaskModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -221,6 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				CEB7691C2BEC7A20000C6E66 /* LoginViewController.swift */,
+				CEB7691E2BECC6E2000C6E66 /* SignUpViewController.swift */,
+				CEB769222BED1801000C6E66 /* homeViewController.swift */,
+				CEB769242BED43AE000C6E66 /* TaskCell.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -228,7 +320,11 @@
 		CEC818132BEAA1C60061BF06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEB769672BEE584F000C6E66 /* libsqlite3.tbd */,
 				CEC818142BEAA1C60061BF06 /* libsqlite3.0.tbd */,
+				48E3029EFDCF5DD91CF4D98F /* Pods_Project_WM.framework */,
+				32EE2BEB64460DA560D2D032 /* Pods_Project_WM_Project_WMUITests.framework */,
+				D660A6F272301A4F94F9E41F /* Pods_Project_WMTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC817F02BEA9F200061BF06 /* Build configuration list for PBXNativeTarget "Project WM" */;
 			buildPhases = (
+				72B2824A808658A7F9BDAC66 /* [CP] Check Pods Manifest.lock */,
 				CEC817BF2BEA9F1A0061BF06 /* Sources */,
 				CEC817C02BEA9F1A0061BF06 /* Frameworks */,
 				CEC817C12BEA9F1A0061BF06 /* Resources */,
+				BA0AEFDE5725CC55FCCF3E16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC817F32BEA9F200061BF06 /* Build configuration list for PBXNativeTarget "Project WMTests" */;
 			buildPhases = (
+				4CF9B0C9D52825F866E802B7 /* [CP] Check Pods Manifest.lock */,
 				CEC817D82BEA9F200061BF06 /* Sources */,
 				CEC817D92BEA9F200061BF06 /* Frameworks */,
 				CEC817DA2BEA9F200061BF06 /* Resources */,
@@ -275,9 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC817F62BEA9F200061BF06 /* Build configuration list for PBXNativeTarget "Project WMUITests" */;
 			buildPhases = (
+				CE09109EA39659056332577E /* [CP] Check Pods Manifest.lock */,
 				CEC817E22BEA9F200061BF06 /* Sources */,
 				CEC817E32BEA9F200061BF06 /* Frameworks */,
 				CEC817E42BEA9F200061BF06 /* Resources */,
+				B384F147CA4338CF7FB4C165 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,6 +461,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CF9B0C9D52825F866E802B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project WMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B2824A808658A7F9BDAC66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project WM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B384F147CA4338CF7FB4C165 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0AEFDE5725CC55FCCF3E16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project WM/Pods-Project WM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project WM/Pods-Project WM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project WM/Pods-Project WM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE09109EA39659056332577E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project WM-Project WMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEC817BF2BEA9F1A0061BF06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -368,14 +572,26 @@
 				CEC817CB2BEA9F1A0061BF06 /* ViewController.swift in Sources */,
 				CEC817D12BEA9F1A0061BF06 /* Project_WM.xcdatamodeld in Sources */,
 				CEC8180E2BEA9FF30061BF06 /* FMResultSet.m in Sources */,
+				CEB769232BED1801000C6E66 /* homeViewController.swift in Sources */,
+				CEB769712BEEA1AB000C6E66 /* TaskCellTableViewCell.swift in Sources */,
 				CEC817C72BEA9F1A0061BF06 /* AppDelegate.swift in Sources */,
 				CEC818102BEA9FF30061BF06 /* FMDatabasePool.m in Sources */,
 				CEC817C92BEA9F1A0061BF06 /* SceneDelegate.swift in Sources */,
+				CEB7691F2BECC6E2000C6E66 /* SignUpViewController.swift in Sources */,
 				CEC8180C2BEA9FF30061BF06 /* FMDatabaseAdditions.m in Sources */,
+				CE7132E12BEFE02700834D23 /* TaskScreenViewModel.swift in Sources */,
+				CEB769252BED43AE000C6E66 /* TaskCell.swift in Sources */,
 				CEC8180D2BEA9FF30061BF06 /* FMDatabaseQueue.m in Sources */,
 				CEC818122BEAA09C0061BF06 /* DatabaseLayer.swift in Sources */,
+				CE71326E2BEF234C00834D23 /* UIViewController.swift in Sources */,
+				CE71326B2BEF1FAB00834D23 /* NewTaskViewModel.swift in Sources */,
+				CE7132E52BEFE64F00834D23 /* ListTaskTableViewController.swift in Sources */,
+				CEB7696C2BEE9B38000C6E66 /* AddTaskViewController.swift in Sources */,
 				CEC8180F2BEA9FF30061BF06 /* FMDatabase.m in Sources */,
 				CEB7691D2BEC7A20000C6E66 /* LoginViewController.swift in Sources */,
+				CEB7696A2BEE7282000C6E66 /* TaskModel.swift in Sources */,
+				CEB769662BEE584F000C6E66 /* SQLiteDatabase.swift in Sources */,
+				CE7132682BEF166A00834D23 /* SQLiteCommands.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +763,7 @@
 		};
 		CEC817F12BEA9F200061BF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123F07F77E18CA06C9420D57 /* Pods-Project WM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -576,6 +793,7 @@
 		};
 		CEC817F22BEA9F200061BF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8762C437CC385DAE98B6CA /* Pods-Project WM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -604,6 +822,7 @@
 		};
 		CEC817F42BEA9F200061BF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A2E84B8A264626A5B0BF7AD /* Pods-Project WMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -623,6 +842,7 @@
 		};
 		CEC817F52BEA9F200061BF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8989BAB51953AC8AC6BE694 /* Pods-Project WMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -642,6 +862,7 @@
 		};
 		CEC817F72BEA9F200061BF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 507E3849B446678C6EB81E4F /* Pods-Project WM-Project WMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +880,7 @@
 		};
 		CEC817F82BEA9F200061BF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9352166DCE1F9870694E5FC /* Pods-Project WM-Project WMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
