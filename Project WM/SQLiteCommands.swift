@@ -9,10 +9,15 @@ import Foundation
 import SQLite
 class SQLiteCommands {
     static var table = Table("task")
-    //Expressions
+    static var tableUsers = Table("users")
+    //Expressions task
     static let id = Expression<Int>("id")
     static let content = Expression<String>("content")
     static let date = Expression<String>("date")
+    //Expressions users
+    static let userId = Expression<Int>("id")
+    static let username = Expression<String>("username")
+    static let password = Expression<String>("password")
     // Creating table
     static func createTable (){
         guard let database = SQLiteDatabase.sharedInstance.database else {
@@ -20,16 +25,67 @@ class SQLiteCommands {
             return
         }
         do {
+            // Create table Taks
             try database.run(table.create(ifNotExists: true)  {  table in
                 table.column(id, primaryKey: true)
                 table.column(content)
                 table.column(date)
             })
+           
         }
         catch{
             print("Table already exists \(error)")
         }
     }
+    // Creating user table
+       static func createUserTable() {
+           guard let database = SQLiteDatabase.sharedInstance.database else {
+               print("Database connect error")
+               return
+           }
+           do {
+               try database.run(tableUsers.create(ifNotExists: true) { table in
+                   table.column(userId, primaryKey: true)
+                   table.column(username, unique: true)
+                   table.column(password)
+               })
+           } catch {
+               print("Table already exists \(error)")
+           }
+       }
+    static func insertUser(username: String, password: String) -> Bool {
+           guard let database = SQLiteDatabase.sharedInstance.database else {
+               print("Datastore connection error")
+               return false
+           }
+           do {
+               try database.run(tableUsers.insert(self.username <- username, self.password <- password))
+               return true
+           } catch let Result.error(message, code, statement) where code == SQLITE_CONSTRAINT {
+               print("Insert user failed: \(message), in \(String(describing: statement))")
+               return false
+           } catch let error {
+               print("Insert user failed: \(error)")
+               return false
+           }
+       }
+    static func verifyUser(username: String, password: String) -> Bool {
+        guard let database = SQLiteDatabase.sharedInstance.database else {
+            print("Datastore connection error")
+            return false
+        }
+        do {
+            let query = tableUsers.filter(self.username == username && self.password == password)
+            let user = try database.pluck(query)
+            return user != nil
+        } catch {
+            print("User verification failed: \(error)")
+            return false
+        }
+    }
+
+  
+   
     static func insertRow(_ taskValues:TaskModel)->Bool? {
         guard let databae = SQLiteDatabase.sharedInstance.database else {
             print("Datastore connection error ")

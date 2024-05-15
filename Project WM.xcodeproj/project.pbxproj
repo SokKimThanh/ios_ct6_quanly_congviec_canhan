@@ -10,6 +10,7 @@
 		22EB5D8B29BF508C984EC8AC /* Pods_Project_WMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D660A6F272301A4F94F9E41F /* Pods_Project_WMTests.framework */; };
 		6BF3DB1FDE71BD1FA2BD0C76 /* Pods_Project_WM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E3029EFDCF5DD91CF4D98F /* Pods_Project_WM.framework */; };
 		9325E79834DF846A233D2F4C /* Pods_Project_WM_Project_WMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EE2BEB64460DA560D2D032 /* Pods_Project_WM_Project_WMUITests.framework */; };
+		CE4AABD92BF3732B00875124 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AABD82BF3732A00875124 /* UserModel.swift */; };
 		CE7132682BEF166A00834D23 /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7132672BEF166A00834D23 /* SQLiteCommands.swift */; };
 		CE71326B2BEF1FAB00834D23 /* NewTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71326A2BEF1FAA00834D23 /* NewTaskViewModel.swift */; };
 		CE71326E2BEF234C00834D23 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71326D2BEF234C00834D23 /* UIViewController.swift */; };
@@ -68,6 +69,7 @@
 		507E3849B446678C6EB81E4F /* Pods-Project WM-Project WMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WM-Project WMUITests.debug.xcconfig"; path = "Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9352166DCE1F9870694E5FC /* Pods-Project WM-Project WMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WM-Project WMUITests.release.xcconfig"; path = "Target Support Files/Pods-Project WM-Project WMUITests/Pods-Project WM-Project WMUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C8989BAB51953AC8AC6BE694 /* Pods-Project WMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project WMTests.release.xcconfig"; path = "Target Support Files/Pods-Project WMTests/Pods-Project WMTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE4AABD82BF3732A00875124 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CE7132672BEF166A00834D23 /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
 		CE71326A2BEF1FAA00834D23 /* NewTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewModel.swift; sourceTree = "<group>"; };
 		CE71326D2BEF234C00834D23 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB769692BEE7282000C6E66 /* TaskModel.swift */,
+				CE4AABD82BF3732A00875124 /* UserModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				CEC817C92BEA9F1A0061BF06 /* SceneDelegate.swift in Sources */,
 				CEB7691F2BECC6E2000C6E66 /* SignUpViewController.swift in Sources */,
 				CEC8180C2BEA9FF30061BF06 /* FMDatabaseAdditions.m in Sources */,
+				CE4AABD92BF3732B00875124 /* UserModel.swift in Sources */,
 				CE7132E12BEFE02700834D23 /* TaskScreenViewModel.swift in Sources */,
 				CEB769252BED43AE000C6E66 /* TaskCell.swift in Sources */,
 				CEC8180D2BEA9FF30061BF06 /* FMDatabaseQueue.m in Sources */,

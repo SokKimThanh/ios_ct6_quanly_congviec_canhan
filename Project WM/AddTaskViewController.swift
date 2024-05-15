@@ -25,7 +25,7 @@ class AddTaskViewController: UIViewController,UITextFieldDelegate {
         createTable()
         setUpViews()
         txtContent.delegate = self
-    
+        
        
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -57,7 +57,7 @@ class AddTaskViewController: UIViewController,UITextFieldDelegate {
                 updateTask(taskValues)
         }
     }
-  
+    
     @IBAction func btnAddTask(_ sender: UIButton) {
         
         let id: Int = viewModel == nil ? 0 : viewModel.id!
